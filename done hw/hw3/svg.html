@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+     shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <title>SVG</title>
+  </head>
+
+  <body class="bg-dark">
+
+    <nav class="navbar navbar-expand-lg navbar-light  bg-light">
+      <a href="#" class="navbar-brand">
+        <span clss="brand-icon"><img src="skull.png" alt="icon"
+          width="40" height="30">
+      </a>
+      <button class="navbar-toggler collapsed" type="button"
+       data-toggle="collapse" data-target="#navbarCollapse"
+       aria-controls="navbarCollapse" aria-expanded="false"
+       aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse show" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link"><i class="fas fa-home">
+            </i>Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown" id="navDropdown" role="button"
+              data-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-link"></i>Tasks</a>
+              <div class="dropdown-menu" aria-labelledby="navDropdown">
+
+                <ul class="dropright">
+                  <li><a id="nav1Dropdown" class="dropdown-item" href="math.html">
+                    Math</a>
+                  </li>
+                  <li><div class="dropdown-divider "></div></li>
+                  <li><a id="nav2Dropdown" class="dropdown-item" href="svg.html">
+                    SVG</a>
+                  </li>
+                </ul>
+              </div>
+          </li>
+          <li>
+            <div class="input-group-append">
+              <button type="button" class="btn btn-outline-secondary"
+              data-toggle="modal"
+              data-target="#exampleModal">
+                Подписаться на музыку
+              </button>
+            </div>
+                <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        Подпишись на музыку
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal"
+                       aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary"
+                    data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">
+                      Подписаться</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">SVG</li>
+      </ol>
+    </nav>
+
+    <div class="container-fluid ">
+      <div class="row">
+          <div class="col-1"></div>
+          <div class="col wrap1 text-center"><br>
+              <svg width="250" height="410">
+                  <g fill="#333">
+                      <!--head-->
+                      <ellipse rx="45" ry="37" cx="55" cy="60" fill="black" transform="rotate(-45, 55, 55)" />
+                      <ellipse rx="45" ry="37" cx="190" cy="60" fill="black" transform="rotate(45, 190, 55)" />
+                      <circle r="67" cx="122" cy="125" fill="black" />
+                      <ellipse rx="35" ry="27" cx="55" cy="60" fill="pink" transform="rotate(-45, 55, 55)" />
+                      <ellipse rx="35" ry="27" cx="190" cy="60" fill="pink" transform="rotate(45, 190, 55)" />
+                      <circle r="57" fill="grey" cx="122" cy="125" />
+                      <!--head-->
+
+                      <!--eyes-->
+                      <circle r="18" cx="145" cy="110" fill="red" stroke="black" stroke-width="5" />
+                      <circle r="18"  cx="100" cy="110" fill="red" stroke="black" stroke-width="5" />
+                      <circle r="10" fill="black" cx="104" cy="115" />
+                      <circle r="10" fill="black" cx="149" cy="115" />
+                      <!--eyes-->
+
+                      <!--nose-->
+                      <line x1="122" y1="119" x2="140" y2="142" stroke="black" stroke-width="3" />
+                      <line x1="122" y1="119" x2="122" y2="142" stroke="black" stroke-width="3" />
+                      <line x1="121" y1="142" x2="140" y2="142" stroke="black" stroke-width="3" />
+                      <line x1="121" y1="135" x2="136" y2="135" stroke="black" stroke-width="3"/>
+                      <!--nose-->
+
+                      <path d="M 100, 150 C 90, 170, 165, 170, 145, 150"
+                          style="stroke: black; stroke-width: 4; fill: none;" />
+
+                  </g>
+              </svg><br>
+          </div>
+          <div class="col-1"></div>
+      </div>
+  </div>
+</div>
+    <hr>
+    <footer class="container">
+      <p class="float-left"><a href="#">Back to top</a></p>
+      <p class="float-right text-white">© 2020 Tashkinov Dima</p>
+    </footer>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+     integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+     crossorigin="anonymous"></script>
+    <script src="../bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
